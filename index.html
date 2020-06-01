@@ -20,7 +20,13 @@
         <span class="platform">智慧财务统一门户</span>
       </div>
       <div class="headerRight">
+        <img src="./img/user.png" alt="">
         <span class="userName">财务分析人员</span>
+        <img src="./img/xia.png" alt="" onclick="handleMouse()">
+        <div class="userMenu" id="user">
+          <p onclick="handleOpenDialog()">录入通知</p>
+          <p>退出</p>
+        </div>
       </div>
     </div>
     <!-- 内容部分 -->
@@ -65,8 +71,9 @@
         </div>
         <div class="left_main_topR commonTitle">
           <div style="height:48px;  line-height: 48px; background-color: #FEF2F4;">
-            <img src="./img/left.png" alt="">
+            <img src="./img/right.png" alt="">
             <span class="titleMsg1">公告通知</span>
+            <span class="deleteRow" style="text-align:right;" onclick="handleCloseMoreList(123)">更多</span>
           </div>
           <div class="entryInfo">
             <ul class="clearfix">
@@ -107,6 +114,7 @@
               <p>预算管理</p>
               <div class="urlList">
                 <ul class="one">
+                  <span class="tooltip"></span>
                   <li>海关预算管理系统</li>
                   <li>海关预算管理系统</li>
                 </ul>
@@ -126,20 +134,20 @@
               <img src="./img/bottom3.png" alt="">
               <p>基建管理</p>
               <div class="urlList">
-                  <ul class="three">
-                      <li>海关预算管理系统</li>
-                      <li>海关预算管理系统</li>
-                    </ul>
-                </div>
+                <ul class="three">
+                  <li>海关预算管理系统</li>
+                  <li>海关预算管理系统</li>
+                </ul>
+              </div>
             </li>
             <li class="BusinessLi" style="margin-right:0">
               <img src="./img/bottom4.png" alt="">
               <p>资产管理</p>
               <div class="urlList">
                 <ul class="four">
-                    <li>海关预算管理系统</li>
-                    <li>海关预算管理系统</li>
-                  </ul>
+                  <li>海关预算管理系统</li>
+                  <li>海关预算管理系统</li>
+                </ul>
               </div>
             </li>
             <li class="BusinessLi">
@@ -147,9 +155,9 @@
               <p>装备管理</p>
               <div class="urlList">
                 <ul class="five">
-                    <li>海关预算管理系统</li>
-                    <li>海关预算管理系统</li>
-                  </ul>
+                  <li>海关预算管理系统</li>
+                  <li>海关预算管理系统</li>
+                </ul>
               </div>
             </li>
             <li class="BusinessLi">
@@ -157,9 +165,9 @@
               <p>企事业财务</p>
               <div class="urlList">
                 <ul class="six">
-                    <li>海关预算管理系统</li>
-                    <li>海关预算管理系统</li>
-                  </ul>
+                  <li>海关预算管理系统</li>
+                  <li>海关预算管理系统</li>
+                </ul>
               </div>
             </li>
             <li class="BusinessLi">
@@ -167,9 +175,9 @@
               <p>税费管理</p>
               <div class="urlList">
                 <ul class="seven">
-                    <li>海关预算管理系统</li>
-                    <li>海关预算管理系统</li>
-                  </ul>
+                  <li>海关预算管理系统</li>
+                  <li>海关预算管理系统</li>
+                </ul>
               </div>
             </li>
             <li class="BusinessLi" style="margin-right:0">
@@ -177,9 +185,9 @@
               <p>涉案财物</p>
               <div class="urlList">
                 <ul class="eight">
-                    <li>海关预算管理系统</li>
-                    <li>海关预算管理系统</li>
-                  </ul>
+                  <li>海关预算管理系统</li>
+                  <li>海关预算管理系统</li>
+                </ul>
               </div>
             </li>
           </ul>
@@ -222,7 +230,70 @@
         <img class="jiao" src="./img/jiao.png" alt="">
       </div>
     </div>
+    <div class="dialog" id="dialog">
+      <div class="body">
+        <div class="bodytitle">
+          公告通知列表
+        </div>
+        <div class="content-Bodys">
+          <ul>
+            <li>
+              <span class="round2"></span>
+              <span class="entryInfo_contents"> 综合处数据填报通知</span>
+              <span class="deleteRow">删除</span>
+            </li>
+            <li>
+              <span class="round2"></span>
+              <span class="entryInfo_contents"> 综合处数据填报通知</span>
+              <span class="deleteRow">删除</span>
+            </li>
+            <li>
+              <span class="round2"></span>
+              <span class="entryInfo_contents"> 综合处数据填报通知</span>
+              <span class="deleteRow">删除</span>
+            </li>
+            <li>
+              <span class="round2"></span>
+              <span class="entryInfo_contents"> 综合处数据填报通知</span>
+              <span class="deleteRow">删除</span>
+            </li>
+            <li>
+              <span class="round2"></span>
+              <span class="entryInfo_contents"> 综合处数据填报通知</span>
+              <span class="deleteRow">删除</span>
+            </li>
+            <li>
+              <span class="round2"></span>
+              <span class="entryInfo_contents"> 综合处数据填报通知</span>
+              <span class="deleteRow">删除</span>
+            </li>
+            <li>
+              <span class="round2"></span>
+              <span class="entryInfo_contents"> 综合处数据填报通知</span>
+              <span class="deleteRow">删除</span>
+            </li>
+            <li>
+              <span class="round2"></span>
+              <span class="entryInfo_contents"> 综合处数据填报通知</span>
+              <span class="deleteRow">删除</span>
+            </li>
+            <li>
+              <span class="round2"></span>
+              <span class="entryInfo_contents"> 综合处数据填报通知</span>
+              <span class="deleteRow">删除</span>
+            </li>
+            <li>
+                <span class="round2"></span>
+                <span class="entryInfo_contents"> 综合处数据填报通知</span>
+                <span class="deleteRow">删除</span>
+              </li>
+          </ul>
+        </div>
+        <div class="Btn"><button onclick="handleCloseMoreList()">关闭</button></div>
+      </div>
+    </div>
   </div>
 </body>
 <script src="./js/index.js"></script>
+
 </html>
