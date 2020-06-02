@@ -332,6 +332,19 @@ body {
     z-index: 10001;
     display: none;
   }
+  .add {
+    width: 100%;
+    height: 1150px;
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#0f000000,endColorstr=#0f000000);
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10001;
+    display: none;
+  }
   .body {
       width: 700px;
       height: 500px;
@@ -356,13 +369,19 @@ body {
     margin: auto;
     z-index: 999; 
   }
-  .infoBody .bodytitle {
-    background-color: #E1EEFD;
-    height: 50px;
-    line-height: 50px;
-    padding-left:20px; 
+  .addinfoBody {
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    background: #fff;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 999; 
   }
-  .body .bodytitle{
+  .bodytitle{
     background-color: #E1EEFD;
     height: 50px;
     line-height: 50px;
@@ -408,8 +427,13 @@ body {
       text-align: right;
       height: 40px;
   }
-  .listInfoBody {
+  .listInfoBody, .addBody {
       padding: 30px;
+  }
+  .inputs {
+    height: 30px;
+    line-height: 30px;
+    width: 200px;
   }
   .infoContent {
      display: inline-block;
@@ -419,6 +443,12 @@ body {
       border: 1px solid #ccc;
       padding-left: 10px;
   }
+  .addBodyLeft {
+      float: left;
+  }
+  .addBodyright {
+    float: left;
+    }
   .twoleft {
     margin-bottom: 20px;
   }

@@ -62,6 +62,10 @@ var handleMouse = function (e) {
 var handleOpenDialog = function () {
   user.style.display = 'none'
   flag = true
+  $('#add').show()
+}
+var handleCloseAddDialog = function () {
+  $('#add').hide()
 }
 // 关闭更多页面
 var handleCloseMoreList = function (foo) {
@@ -235,3 +239,6 @@ function ClickEveryToday (d) {
   }
 }
 ClickEveryToday(d)
+$('#mydatepicker2').dcalendarpicker({
+  format:'yyyy-mm-dd'
+}); 

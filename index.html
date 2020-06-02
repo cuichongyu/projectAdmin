@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/dcalendar.picker.css"/>
 </head>
 
 <body>
@@ -205,26 +206,26 @@
           </div>
           <div style="text-align:center;padding:20px;color:#074791;font-size:16px;" id="dataTime"></div>
         </div>
-        <div class="calendar">
-            <div class="calendar-row">
-              <i class="fa fa-chevron-left right" onclick="prevMonth()"></i>
-              <span id="left" class="left"></span>
-              <i class="fa fa-chevron-right right" onclick="nextMonth()"></i>
+        <div class="calendarsss">
+          <div class="calendar-row">
+            <i class="fa fa-chevron-left right" onclick="prevMonth()"></i>
+            <span id="left" class="left"></span>
+            <i class="fa fa-chevron-right right" onclick="nextMonth()"></i>
+          </div>
+          <div class="calendar-content">
+            <div>
+              <span class="cells">日</span>
+              <span class="cells">一</span>
+              <span class="cells">二</span>
+              <span class="cells">三</span>
+              <span class="cells">四</span>
+              <span class="cells">五</span>
+              <span class="cells">六</span>
             </div>
-            <div class="calendar-content">
-                <div>
-                  <span class="cells">日</span>
-                  <span class="cells">一</span>
-                  <span class="cells">二</span>
-                  <span class="cells">三</span>
-                  <span class="cells">四</span>
-                  <span class="cells">五</span>
-                  <span class="cells">六</span>
-                </div>
-                <div class="calendar-days" id="calendar-days">
-                </div>
+            <div class="calendar-days" id="calendar-days">
             </div>
           </div>
+        </div>
       </div>
       <div class="main-right-bottom">
         <img src="./img/right1.png" alt="">
@@ -341,9 +342,37 @@
         </div>
       </div>
     </div>
+    <div class="add" id="add">
+      <div class="addinfoBody">
+        <div class="bodytitle">
+          通知录入
+        </div>
+        <div class="addBody">
+          <div class="addBodyLeft">
+            <span class="infoName">通知主题：</span>
+            <input type="text" class="inputs">
+          </div>
+          <div class="addBodyright">
+            <span class="infoName">时限时间：</span>
+            <input id='mydatepicker2' type='text'/ class="inputs">
+          </div>
+          <div>
+            <span class="infoName" style="margin-top:20px;">通知内容：</span>
+          </div>
+          <textarea id="txtarea1" runat="server" rows="5" style="overflow-y:visible;width: 100%;padding-left:10px;padding-top:10px;"></textarea>
+        </div>
+        <div class="Btn">
+          <button onclick="handleCloseListInfo()" style="float: left;margin-left: 20px;">发送</button>
+          <button onclick="handleCloseAddDialog()" style="float: right;margin-right: 20px;">关闭</button>
+          <button onclick="handleCloseListInfo()" style="float: right;margin-right: 20px;">保存</button>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 <script src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="js/dcalendar.picker.js"></script>
 <script src="./js/dateTime.js"></script>
 <script src="./js/index.js"></script>
+
 </html>
