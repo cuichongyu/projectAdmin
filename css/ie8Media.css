@@ -1,0 +1,57 @@
+@media(max-width: 1680px) {
+    .calendar-content .cells {
+        margin-right: 5px;
+      }
+      .calendar-content .cell{
+        margin-bottom: 10px;
+        margin-right: 17px ;
+      }
+    
+}
+@media(max-width: 1440px) {
+    .calendar-content {
+        padding-left: 3px;
+    }
+    .calendar-content .cells {
+       display: inline-block;
+       width: 30px !important;
+       height: 30px !important;
+      }
+      .calendar-content .cell{
+        margin-bottom: 10px;
+        margin-right: 11px ;
+      }
+      .titleMsg1 {
+          width: 80%;
+      }
+      .bodySystems li {
+        margin-right: 13%;
+    }
+    .bodySystems p {
+    margin-right: -20px;
+    }
+    
+}
+@media(max-width: 1366px) {
+    .calendar-content {
+        padding-left: 3px;
+    }
+    .calendar-content .cells {
+       display: inline-block;
+       width: 29px !important;
+       height: 29px !important;
+      }
+      .calendar-content .cell{
+        margin-bottom: 20px;
+        margin-right: 2px ;
+      }
+      .titleMsg1 {
+        width: 77%;
+    }
+    .bodySystems li {
+        margin-right: 10%;
+    }
+    .bodySystems p {
+      margin-right: -20px;
+    }
+}
