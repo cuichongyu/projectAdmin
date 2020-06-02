@@ -8,6 +8,7 @@
   <title>智慧财务统一门户</title>
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -199,11 +200,31 @@
       <div class="main-right-day">
         <div class="rightMain-title">
           <div class="icon-time">
-            <i class="el-icon-date" style="font-size:30px;"></i>
+            <img src="./img/date.png" alt="">
             <span style="font-size:26px;">今天</span>
           </div>
-          <!-- <div style="text-align:center;padding:20px;color:#074791;font-size:16px;">{{ dataTime }}</div> -->
+          <div style="text-align:center;padding:20px;color:#074791;font-size:16px;" id="dataTime"></div>
         </div>
+        <div class="calendar">
+            <div class="calendar-row">
+              <i class="fa fa-chevron-left right" onclick="prevMonth()"></i>
+              <span id="left" class="left"></span>
+              <i class="fa fa-chevron-right right" onclick="nextMonth()"></i>
+            </div>
+            <div class="calendar-content">
+                <div>
+                  <span class="cells">日</span>
+                  <span class="cells">一</span>
+                  <span class="cells">二</span>
+                  <span class="cells">三</span>
+                  <span class="cells">四</span>
+                  <span class="cells">五</span>
+                  <span class="cells">六</span>
+                </div>
+                <div class="calendar-days" id="calendar-days">
+                </div>
+            </div>
+          </div>
       </div>
       <div class="main-right-bottom">
         <img src="./img/right1.png" alt="">
@@ -211,7 +232,6 @@
           <p style="font-size:16px;font-weight:bold;">信息资源目录</p>
           <p style="font-size:14px;color: #555">快捷、方便、高效查找</p>
         </div>
-        <img class="jiao" src="./img/jiao.png" alt="">
       </div>
       <div class="main-right-bottom">
         <img src="./img/right2.png" alt="">
@@ -219,7 +239,6 @@
           <p style="font-size:16px;font-weight:bold;">财务数据分析</p>
           <p style="font-size:14px;color: #555">快捷、方便、全面查询</p>
         </div>
-        <img class="jiao" src="./img/jiao.png" alt="">
       </div>
       <div class="main-right-bottom">
         <img src="./img/right3.png" alt="">
@@ -227,7 +246,6 @@
           <p style="font-size:16px;font-weight:bold;">数据治理平台</p>
           <p style="font-size:14px;color: #555">快捷、方便、全面</p>
         </div>
-        <img class="jiao" src="./img/jiao.png" alt="">
       </div>
     </div>
     <div class="dialog" id="dialog">
@@ -283,17 +301,49 @@
               <span class="deleteRow">删除</span>
             </li>
             <li>
-                <span class="round2"></span>
-                <span class="entryInfo_contents"> 综合处数据填报通知</span>
-                <span class="deleteRow">删除</span>
-              </li>
+              <span class="round2"></span>
+              <span class="entryInfo_contents"> 综合处数据填报通知</span>
+              <span class="deleteRow">删除</span>
+            </li>
           </ul>
         </div>
-        <div class="Btn"><button onclick="handleCloseMoreList()">关闭</button></div>
+        <div class="Btn">
+          <button onclick="handleCloseMoreList()">关闭</button>
+        </div>
+      </div>
+    </div>
+    <div class="dialogListInfo" id="dialogInfo">
+      <div class="infoBody">
+        <div class="bodytitle">
+          公告详情
+        </div>
+        <div class="listInfoBody">
+          <!-- 第一行 -->
+          <div class="oneLeft">
+            <span class="infoName">通知主题：</span>
+            <span class="infoContent">1</span>
+          </div>
+          <div class="oneright">
+            <span class="infoName">通知状态：</span>
+            <span class="infoContent">2</span>
+          </div>
+          <div class="twoleft">
+            <span class="infoName">时限时间：</span>
+            <span class="infoContent">2020.06.01</span>
+          </div>
+          <div class="threeleft">
+            <span class="infoName">通知状态：</span>
+          </div>
+          <span class="textAreas">123</span>
+        </div>
+        <div class="Btn">
+          <button onclick="handleCloseListInfo()">关闭</button>
+        </div>
       </div>
     </div>
   </div>
 </body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/dateTime.js"></script>
 <script src="./js/index.js"></script>
-
 </html>

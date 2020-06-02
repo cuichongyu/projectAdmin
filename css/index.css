@@ -216,6 +216,22 @@ body {
     border-radius:4px;
     margin-bottom: 22px;
  }
+ /* 日历 */
+ .rightMain-title {
+    background: #E1EEFD;
+ }
+ .icon-time {
+     padding-top: 30px;
+     color: #0E7FF4;
+     font-family:Microsoft YaHei;
+     text-align: center;
+ }
+ .icon-time img{
+     vertical-align: middle;
+ }
+ .icon-time span{
+    vertical-align: middle;
+}
  .main-right-bottom {
     height: 124px;
     background:#fff;
@@ -229,7 +245,7 @@ body {
  }
  .bottomName {
      float: left;
-     width: 50%;
+     width: 60%;
      margin-left: 15px;
      margin-top: 50px;
  }
@@ -300,10 +316,23 @@ body {
     left: 0;
     filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#0f000000,endColorstr=#0f000000);
     background: rgba(0, 0, 0, 0.8);
-    z-index: 1000;
+    z-index: 10001;
     display: none;
   }
-  .dialog .body {
+  .dialogListInfo {
+    width: 100%;
+    height: 1150px;
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#0f000000,endColorstr=#0f000000);
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10001;
+    display: none;
+  }
+  .body {
       width: 700px;
       height: 500px;
       position: absolute;
@@ -314,6 +343,24 @@ body {
       left: 0;
       margin: auto;
       z-index: 999;
+  }
+  .infoBody {
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    background: #fff;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 999; 
+  }
+  .infoBody .bodytitle {
+    background-color: #E1EEFD;
+    height: 50px;
+    line-height: 50px;
+    padding-left:20px; 
   }
   .body .bodytitle{
     background-color: #E1EEFD;
@@ -350,3 +397,106 @@ body {
       text-align: center;
       margin-top: 50px;
   }
+  .oneLeft, .oneright {
+      width: 50%;
+      float: left;
+      margin-bottom: 20px;
+  }
+  .infoName {
+      width: 110px;
+      display: inline-block;
+      text-align: right;
+      height: 40px;
+  }
+  .listInfoBody {
+      padding: 30px;
+  }
+  .infoContent {
+     display: inline-block;
+      width: 190px;
+      height: 30px;
+      line-height: 30px;
+      border: 1px solid #ccc;
+      padding-left: 10px;
+  }
+  .twoleft {
+    margin-bottom: 20px;
+  }
+  .textAreas {
+    display: inline-block;
+    width:  100%;
+    height: 100px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  .calendar-row .left {
+    color: #010101;
+    font-size:20px;
+    font-family:PingFang;
+    font-weight:bold;
+    color:rgba(1,1,1,1);
+    line-height:29px;
+    margin: 0 20%;
+  }
+  .calendar-row .right {
+    color: #154F8E;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .calendar-row {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    padding-right: 3px;
+    border-bottom: 3px solid #ccc;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.calendar-content {
+    padding-left: 15px;
+}
+.calendar-content .cells {
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 13px;
+    width: 35px;
+    height: 35px;
+    font-size:15px;
+    font-family:PingFang;
+    font-weight:bold;
+    color:#8A857C;
+    margin-bottom: 20px;
+  }
+  .calendar-days {
+    overflow: hidden;
+  }
+  .calendar-content .cell{
+    float: left;
+    text-align: center;
+    line-height: 35px;
+    width: 35px;
+    height: 35px;
+    color: #292621;
+    font-weight: bold;
+    font-size:15px;
+    position: relative;
+    margin-bottom: 20px;
+    margin-right: 17px ;
+    cursor:pointer;
+  }
+  .notCurrenrMonth {
+    color: #ccc !important;
+  }
+  .todays {
+    background: #0E7FF4;
+    color: #ffffff !important;
+    border-radius: 4px;
+    border-radius: 50%;
+   }
+   .Select {
+    background: #0E7FF4;
+    border-radius: 50%;
+    color: #ffffff !important;
+   }
